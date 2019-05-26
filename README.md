@@ -106,6 +106,19 @@ Debug\dd(
 
 ```
 
+### Placeholders
+
+The format of each trace line produced by Debug\readable_debug_backtrace() can be modified by setting the `format` argument. The default format is `[{{PATH}}/{{FILENAME}}:{{LINE}}] {{CLASS}}{{TYPE}}{{FUNCTION}}();` which looks something like `[../path/to/test.php:24] foo->__construct();`.
+
+Placeholders available are:
+
+-   PATH
+-   FILENAME
+-   LINE
+-   CLASS
+-   TYPE
+-   FUNCTION
+
 ## Support
 
 If you believe you have found a bug, please report it using the [GitHub issue tracker](https://github.com/pointybeard/helpers-functions-debug/issues),
