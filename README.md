@@ -1,6 +1,6 @@
 # PHP Helpers: Debug Functions
 
--   Version: v1.0.0
+-   Version: v1.0.1
 -   Date: May 26 2019
 -   [Release notes](https://github.com/pointybeard/helpers-functions-debug/blob/master/CHANGELOG.md)
 -   [GitHub repository](https://github.com/pointybeard/helpers-functions-debug)
