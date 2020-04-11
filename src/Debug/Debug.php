@@ -65,7 +65,7 @@ if (!function_exists(__NAMESPACE__.'\readable_debug_backtrace')) {
         $lines = [];
 
         foreach ($trace as $line) {
-            if (null !== $line['file']) {
+            if (true == isset($line['file']) && null !== $line['file']) {
                 try {
                     $line['filename'] = basename($line['file']);
                     $line['path'] = dirname(Paths\get_relative_path(getcwd(), $line['file']));
@@ -95,6 +95,6 @@ if (!function_exists(__NAMESPACE__.'\readable_debug_backtrace')) {
             );
         }
 
-        return implode($lines, PHP_EOL);
+        return implode(PHP_EOL, $lines);
     }
 }
